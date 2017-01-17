@@ -1,0 +1,1 @@
+this is a simple code for generating prime numbers
