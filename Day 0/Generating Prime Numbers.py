@@ -2,9 +2,10 @@
 #This is a trial code and seems to give me repeating numbers
 
 n=int(input("Enter a number:"))
-print ("Prime numbers within the limit are:")
+
 
 for num in range(0,n):
+    print ("Prime numbers within the limit are:")
     if num > 1:
         for i in range(2,num):
             if (num % i) ==0:
