@@ -1,4 +1,5 @@
 #"A simple way of getting prime numbers in a given range"
+#This is a trial code and seems to give me repeating numbers
 limit=int(input("Enter the limit:"))
 
 print ("Prime numbers within the limits are:")
