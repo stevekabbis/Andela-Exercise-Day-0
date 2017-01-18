@@ -1,6 +1,6 @@
-def words(a):
+def words(a):  #define variable with an argument
   b=a.split()
-  split_words=[]
+  split_words=[] # where the dictionary will be 
   
   for x in b:
     try:
