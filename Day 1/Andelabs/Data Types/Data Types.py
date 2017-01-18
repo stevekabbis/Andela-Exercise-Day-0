@@ -1,17 +1,24 @@
-
-def fizz_buzz(n):
-    for num in range(1,n): #identify a number between 1 and n
-
-        if num%3==0 and num%5==0: # Checking for dividiblity by 3 and 5
-	        return ("FizzBuzz")
-
-        elif num%3==0:
-	        return("Fizz")
-
-        elif num%5==0:
-	        return("Buzz")
+def data_type(d):
+    d_type = type(d)
+    if d_type == str:
+        return len(d)
+    elif d_type == bool:
+        return d
+    elif d_type ==int:
+        if d ==100:
+            return "equal to 100"
+        elif d <100:
+            return "less than 100"
 
         else:
-	        return(n)
+            return "more than 100"
 
-if __name__=="__fizz_buzz__":fizz_buzz()
+    elif d_type == list:
+        try:
+            if d[2]:
+                return d[2]
+        except (IndexError):
+                return None
+    else:
+        return "no value"
+        
