@@ -1,4 +1,4 @@
-lower = 0
+lower = int(0)
 n = int(input("Enter upper range: "))
 
 print("Prime numbers between",lower,"and",n,"are:")
