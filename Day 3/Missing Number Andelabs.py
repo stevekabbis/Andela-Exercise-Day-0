@@ -1,5 +1,10 @@
-import requests     #will import the module called requests
+def find_missing(a,b):
+	set_a = set(a)
+	set_b = set(b)
 
-r = requests.get('http://www.reddit.com/r/history') # will request for data from the subreddit called history
-print (r.json())    # Will give the final output
+	if len(set_a) ==len(set_b):
+		return 0
 
+	else:
+		c = set_a ^ set_b
+		return (list(c)[0])
